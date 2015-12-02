@@ -10,7 +10,7 @@ package usuarios;
  * @author angel
  */
 public class Usuario {
-    private String tipo;
+    String tipo;
 
     public Usuario(String tipo) {
         this.tipo = tipo;

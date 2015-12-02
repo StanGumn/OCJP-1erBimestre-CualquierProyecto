@@ -11,14 +11,23 @@ package usuarios;
  */
 public class Administrador extends Usuario{
     private String Cedula;
+
+    public String getCedula() {
+        return Cedula;
+    }
+
+    public void setCedula(String Cedula) {
+        this.Cedula = Cedula;
+    }
     private String Telefono;
     private String nombre;
     
 
-    public Administrador(String Cedula, String Telefono, String tipo) {
+    public Administrador(String nombre,String Cedula, String Telefono, String tipo) {
         super(tipo);
         this.Cedula = Cedula;
         this.Telefono = Telefono;
+        this.nombre= nombre;
     }
     
     @Override
