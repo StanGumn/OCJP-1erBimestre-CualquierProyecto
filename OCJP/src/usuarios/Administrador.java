@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package usuarios;
 
-/**
- *
- * @author angel
- */
-public class Administrador extends Usuario{
+/*** @author angel*/
+public class Administrador extends Usuario {
+
     private String Cedula;
 
     public String getCedula() {
@@ -21,23 +14,20 @@ public class Administrador extends Usuario{
     }
     private String Telefono;
     private String nombre;
-    
 
-    public Administrador(String nombre,String Cedula, String Telefono, String tipo) {
+    public Administrador(String nombre, String Cedula, String Telefono, String tipo) {
         super(tipo);
         this.Cedula = Cedula;
         this.Telefono = Telefono;
-        this.nombre= nombre;
+        this.nombre = nombre;
     }
-    
-    @Override
-	public String toString() {
-		System.out.println("%%--Datos del Administrador--%%");
-		System.out.println("NOMBRE: " + this.nombre);
-		System.out.println("CEDULA: " + this.Cedula);
-		System.out.println("TELEFONO: " + this.Telefono);
-		System.out.println("------");
-		return "-----------";
-	}
-   
+
+    public void imprimirDatos() {
+        System.out.println("\t\t%%--Datos del Administrador--%%");
+        System.out.println("\tNOMBRE: " + this.nombre);
+        System.out.println("\tCEDULA: " + this.Cedula);
+        System.out.println("\tTELEFONO: " + this.Telefono);
+        System.out.println("----------------------------");
+    }
+
 }
